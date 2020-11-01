@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Helvetica;
+}
+
+#scroller {
+    overflow: auto;
+    height: 200px;
+}
+
+.main-header {
+    padding: 120px 0;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-x {
+    padding: 200px 0 150px;
+}
+
+.top-nav {
+    overflow: hidden;
+    box-shadow: 0 1px 20px #cfcfcf;
+    width: 100%;
+}
+
+.top-nav a {
+    float: left;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 25px;
+    color: #000000;
+    text-align: center;  
+}
+
+.top-nav-right a:hover {
+    color: #3D3F70;
+    text-decoration: line-through; 
+}
+
+.top-nav-right {
+    float: right;
+}
+
+.header-info {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 150px;
+    padding-right: 20px;
+}
+
+.header-info > h1 {
+    font-size: 57px;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+/* .social-icons > a {
+    padding-left: 7px;
+} */
+
+.social-icons > a:first-child {
+    padding-left: 0px;
+}
+
+.fab {
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    color: #3D3F70;
+}
+
+.fa-instagram {
+    color: #3D3F70;
+}
+
+.fa-linkedin {
+    color: #3D3F70;
+}
+
+.fa-behance {
+    color: #3D3F70;
+}
+
+.fa-github {
+    color: #3D3F70;
+}
+
+.fa-envelope {
+    color: #3D3F70;
+}
+
+.fas {
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fas:hover {
+    opacity: 0.7;
+}
+
+.about {
+    background-color: #f5f5f5;
+    height: 1000px;
+    text-align: center;
+}
+
+.about h1 {
+    padding-top: 25px;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
+.row {
+    padding-bottom: 25px;
+    display: flex;
+
+}
+
+.column img {
+    margin-left: -75px;
+    margin-top: 150px;
+}
+
+.column-info {
+    flex: 50%;
+    padding: 10px;
+    padding-bottom: 25px;
+    height: 100px;
+    text-align: justify;
+}
+
+.column-info h4 {
+    padding-bottom: 5px;
+}
+
+.row-info {
+    padding-bottom: 25px;
+    display: flex;
+}
+
+.column > p {
+    margin: 25px 100px 25px 0;
+    text-align: justify;
+}
+
+.column-info > ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+ul > li {
+    padding-bottom: 5px;
+}
+
+ul > li:last-child { 
+    padding-bottom: 0; 
+}
+
+.container-skills {
+    width: 600px;
+    background-color: #ddd;
+    margin-top: -25px;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.mkt {
+    width: 90%;
+    background-color: #3D3F70;
+}
+
+.front-end {
+    width: 50%;
+    background-color: #3D3F70;
+}
+
+.back-end {
+    width: 20%;
+    background-color: #3D3F70;
+}
+
+.portfolio {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    background-color: #fff;
+}
+
+.portfolio .portfolio-title {
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.portfolio-title > h1 {
+    padding-top: 25px;
+}
+
+.portfolio-title > p {
+    margin: 25px 100px 25px 100px;
+}
+
+
+.portfolio .box {
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    float: left;
+    margin: 15px;
+    background: #f5f5f5;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+.portfolio .box .box-content {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.portfolio .box .box-title {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3D3F70;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.portfolio .box:hover .box-title {
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.portfolio .box .box-title .fab {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.portfolio .box:hover .box-title .fab {
+    font-size: 40px;
+}
+
+.portfolio .box .box-title h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 35px;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.portfolio .box:hover .box-title h3 {
+    font-size: 8px;
+}
+
+.portfolio .box p {
+    padding: 30px 5px 15px 5px;
+    text-align: center;
+}
+
+.fa-plus {
+    color: #3D3F70;
+}
+
+.fas:hover {
+    opacity: 0.7;
+}
+
+/*Quem for revisar este código, tenta mudar o font-size do bugfix pra 5px pra ver o que acontece... NÃO FAÇO IDEIA DE COMO RESOLVER*/ .bugFixMacGyver {
+    background-color: white;
+    color: white;
+    font-size: 10px;
+}
+
+.contact {
+    background-color: #f5f5f5;
+    height: 100%;
+    width: 100vw;
+    text-align: center;
+}
+
+.contact h1 {
+    padding-top: 25px;
+}
+
+.contact-title > h1 {
+    padding-top: 25px;
+}
+
+.contact-title > p {
+    margin: 25px 100px 25px 100px;
+}
+
+input[type=text] {
+    width: 300px;
+    padding: 10px 10px 9px 2.3em;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #bdc3c7;
+    border-radius: 3px;
+    margin-bottom: 25px;
+}
+
+input[type=text]:last-child {
+    padding-bottom: 0px;
+}
+
+button {
+    border: none;
+    width: 300px;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 0;
+    cursor: pointer;
+    background-color: #3D3F70;
+    height:40px;
+    margin-bottom: 25px;
+  }
+
+button:hover {
+    opacity: 0.7;
+}
+
+.footer {
+    overflow: hidden;
+    width: 100%;
+    background: #4B4453; 
+    font-size: 12px;
+
+}
+
+.footer a {
+    float: left;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 20px 25px;
+    color: #ffffff;
+    text-align: center; 
+}
+
+.footer-nav-right a {
+    float: left;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 20px 25px;
+    color: #ffffff;
+    text-align: center; 
+}
+
+.footer-nav-right a:hover {
+    color: #CED1E8;
+    text-decoration: line-through; 
+}
+
+.footer-nav-right {
+    float: right;
+}
