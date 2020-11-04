@@ -29,7 +29,7 @@ img {
     width: 100px;
 }
 
-div>p:first-child {
+div > p:first-child {
     display: inline;
 }
 
@@ -67,16 +67,22 @@ div img {
   **/
 
 #container-de-descricao {
-    height: 250px;
+    height: 200px;
     background-color: #2274a5;
     color: white;
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
-
-#container-de-descricao > ol {
-    padding: 15px 0px;
+#container-descricao-text {
+    text-align: center;
 }
+
+#container-descricao-text > ol {
+    padding: 0 100px 0 100px;
+    text-align: center;
+    list-style-type: none;
+}
+
 
 #container-para-comprar {
     background-color: #e7eb90;
