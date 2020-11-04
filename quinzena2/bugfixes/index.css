@@ -7,6 +7,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 {
@@ -14,6 +15,7 @@ h2 {
     padding: 10px 5px 10px 5px;
     color: white;
     text-align: center;
+    font-weight: normal;
 }
 
 input {
@@ -44,7 +46,8 @@ div img {
     border-radius: 5px;
     font-size: 20px;
     color: white;
-    margin-top: 100px;
+    margin-top: 75px;
+    margin-bottom: 100px;
 }
 
 .botao-amarelo:hover {
@@ -89,9 +92,12 @@ div img {
     background-color: #e7eb90;
 }
 
-#container-para-comprar > p {
+.texto-comprar {
+    padding-top: 100px;
+}
+
+.texto-comprar > p {
     color: #c44f00;
-    padding: 100px 0;
     font-size: 60px;
     
 }
@@ -110,7 +116,6 @@ div:last-child {
 
 table {
     width: 60%;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin: auto;
 }
@@ -120,7 +125,9 @@ td button {
     width: 150px;
     height: 30px;
     border-radius: 5px;
-    color: black
+    color: black;
+    border-color: transparent;
+    font-weight: bold;
 }
 
 td button:hover {
