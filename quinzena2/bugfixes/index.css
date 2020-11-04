@@ -146,3 +146,9 @@ td button:hover {
 #back-button:hover {
     background-color: #635a3d
 }
+
+#search-bar {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
