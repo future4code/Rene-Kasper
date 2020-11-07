@@ -59,10 +59,6 @@ body {
     display: grid;
 }
 
-#content2 {
-
-}
-
 #blank {
     grid-area: 1 / 2 / 3 / 3;
 }
