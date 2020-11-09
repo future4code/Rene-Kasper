@@ -1,0 +1,169 @@
+/** 
+  *
+  *  ESTILOS GERAIS 
+  *
+  **/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    background-color: #fe7e02;
+    padding: 10px 5px 10px 5px;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+
+input {
+    height: 20px;
+    width: 500px;
+}
+
+button:focus {
+    color: white;
+}
+
+img {
+    width: 100px;
+}
+
+div > p:first-child {
+    display: inline;
+}
+
+div img {
+    background: transparent;
+}
+
+.botao-amarelo {
+    background-color: #ffaf43;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    margin-top: 75px;
+    margin-bottom: 100px;
+}
+
+.botao-amarelo:hover {
+    background-color: #c44f00;
+}
+
+.container {
+    text-align: center;
+}
+
+.icone {
+    height: 20px;
+    width: 20px;
+}
+
+
+/** 
+  *
+  *  ESTILOS HOME 
+  *
+  **/
+
+#container-de-descricao {
+    height: 200px;
+    background-color: #2274a5;
+    color: white;
+    padding-top: 100px;
+}
+
+#container-descricao-text {
+    text-align: center;
+}
+
+#container-descricao-text > ol {
+    padding: 0 100px 0 100px;
+    text-align: center;
+    list-style-type: none;
+}
+
+
+#container-para-comprar {
+    background-color: #e7eb90;
+}
+
+.texto-comprar {
+    padding-top: 100px;
+}
+
+.texto-comprar > p {
+    color: #c44f00;
+    font-size: 60px;
+    
+}
+
+
+/**
+  *
+  *  ESTILOS COMPRAR 
+  *
+  **/
+
+div:nth-child(2),
+div:last-child {
+    text-align: center;
+}
+
+table {
+    width: 60%;
+    font-weight: bold;
+    margin: auto;
+}
+
+td button {
+    background-color: #fadf63;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    color: black;
+    border-color: transparent;
+    font-weight: bold;
+}
+
+td button:hover {
+    background-color: #c44f00;
+}
+
+
+.container-do-search {
+    margin-top: 20px;
+    height: 100px;
+}
+
+
+#back-button {
+    background-color: white;
+    width: 100px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 10px;
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#footer {
+    position: relative;
+}
+
+
+#back-button:hover {
+    background-color: #635a3d
+}
+
+#search-bar {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
