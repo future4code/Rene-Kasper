@@ -109,3 +109,10 @@ function logica05() {
     console.log("A diferença entre eles é", dif)
 }
 
+// ********************* EXERCÍCIOS DE FUNÇÕES ********************** //
+//EXERCÍCIO 2
+/*
+const hello = () => { alert("Hello Future4") }
+
+hello()
+*/
