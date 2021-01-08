@@ -145,19 +145,39 @@ function filmeFavorito() {
 }
 
 //EXERCÍCIO 04
-const pessoa = {
+const pessoacriada = {
     nome: "Érico Veríssimo",
     email: "ericoverissimo@gmail.com",
     endereco: "Porto Alegre"
 }
-console.log(pessoa)
+console.log(pessoacriada)
 
 function anonimizarPessoa() {
     const anonimo = {
-        ...pessoa,
+        ...pessoacriada,
         nome: "Anônimo"
     }
     console.log(anonimo)
 }
 
 anonimizarPessoa()
+
+// ********************* EXERCÍCIOS DE FUNÇÕES DE ARRAYS ********************** //
+//EXERCÍCIO 01
+const pessoas = [
+    { nome: "Pedro", idade: 20 },
+	{ nome: "João", idade: 10 },
+	{ nome: "Paula", idade: 12 },
+	{ nome: "Artur", idade: 89 } 
+]
+
+const adultos = pessoas.filter((pessoa) => {
+    return pessoa.idade >= 20
+});
+
+const criancas = pessoas.filter((pessoa) => {
+    return pessoa.idade < 20
+});
+
+console.log(adultos)
+console.log(criancas)
