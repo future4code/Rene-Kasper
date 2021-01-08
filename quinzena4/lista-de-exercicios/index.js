@@ -59,3 +59,13 @@ function logica03() {
     }
 
 }
+
+function logica04(lado01, lado02, lado03) {
+    if (lado01 === lado02 && lado02 === lado03) {
+        console.log("Equilátero")
+    } else if ((lado01 === lado02) || (lado02 === lado03) || (lado03 === lado01)) {
+        console.log("Isósceles")
+    } else {
+        console.log("Escaleno")
+    }
+}
