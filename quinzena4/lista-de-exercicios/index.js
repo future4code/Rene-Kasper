@@ -18,7 +18,7 @@
 
 // ********************* EXERCÍCIOS DE LÓGICA DE PROGRAMAÇÃO ********************** //
 // EXERCÍCIO 01 //
-let nomes = ["bananinha", "teste", "amem"]
+/*let nomes = ["bananinha", "teste", "amem"]
 
 // FOR
 for(var i = 0; i < nomes.length; i++) {
@@ -34,4 +34,13 @@ nomes.forEach((nome) => {
 const nomesMap = nomes.map(nome => {
     return nome
 })
-console.log(nomesMap)
+console.log(nomesMap)*/
+
+// EXERCÍCIO 02 //
+/*
+A) false
+B) false
+C) true
+D) true
+E) true
+*/
