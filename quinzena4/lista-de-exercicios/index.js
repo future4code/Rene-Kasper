@@ -18,23 +18,25 @@
 
 // ********************* EXERCÍCIOS DE LÓGICA DE PROGRAMAÇÃO ********************** //
 // EXERCÍCIO 01 //
-/*let nomes = ["bananinha", "teste", "amem"]
+function logica01() {
+    let nomes = ["bananinha", "teste", "amem"]
 
-// FOR
-for(var i = 0; i < nomes.length; i++) {
-    console.log(nomes[i])
+    // FOR
+    for(var i = 0; i < nomes.length; i++) {
+        console.log(nomes[i])
+    }
+
+    //FOREACH
+    nomes.forEach((nome) => {
+        console.log(nome)
+    });
+
+    //MAP
+    const nomesMap = nomes.map(nome => {
+        return nome
+    })
+    console.log(nomesMap)
 }
-
-//FOREACH
-nomes.forEach((nome) => {
-    console.log(nome)
-});
-
-//MAP
-const nomesMap = nomes.map(nome => {
-    return nome
-})
-console.log(nomesMap)*/
 
 // EXERCÍCIO 02 //
 /*
@@ -44,3 +46,16 @@ C) true
 D) true
 E) true
 */
+
+//EXERCÍCIO 03
+//O programa não funcionava pois não foi definido nenhum valor para a variável quantidadeDeNumerosPares, além disso, dentro do while, nenhuma informação era passado para mudar o índice i, passando para o próximo valor... Por isso o i++.
+function logica03() {
+    
+    const quantidadeDeNumerosPares = prompt("Digite um número")
+    let i = 0
+    while(i < quantidadeDeNumerosPares) {
+        console.log(i*2)
+        i++
+    }
+
+}
