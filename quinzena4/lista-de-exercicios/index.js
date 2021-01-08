@@ -11,3 +11,7 @@
 //Quantidade total de números 14
 //6
 //8
+
+// EXERCÍCIO 04 //
+//-10
+//1590
