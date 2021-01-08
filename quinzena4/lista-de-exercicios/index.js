@@ -209,7 +209,7 @@ function parOuImpar(n) {
 console.log(valoresTriplicados)
 console.log(parImpar)
 
-//EXERCÍCIO 02
+//EXERCÍCIO 03
 const visitantes = [
 	{ nome: "Paula", idade: 12, altura: 1.8},
 	{ nome: "João", idade: 20, altura: 1.3},
@@ -237,3 +237,27 @@ const naoPermitido = visitantes.filter((visitante) => {
 
 console.log(permitido)
 console.log(naoPermitido)
+
+//EXERCÍCIO 04
+const consultas = [
+	{ nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
+	{ nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
+	{ nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
+	{ nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
+]
+
+const confirmadas = consultas.map((paciente) => {
+    if(paciente.cancelada === true) {
+        if (paciente.genero === "masculino") {
+            return "Olá, Sr. ${ nome da pessoa }. Estamos enviando esta mensagem para ${ lembrá-lo / lembrá-la } da sua consulta no dia ${ data da consulta }. Por favor, acuse o recebimento deste e-mail."
+        } else if (paciente.genero === "feminino") {
+            return "Olá, Sra. ${ nome da pessoa }. Estamos enviando esta mensagem para ${ lembrá-lo / lembrá-la } da sua consulta no dia ${ data da consulta }. Por favor, acuse o recebimento deste e-mail."
+        }
+    } else if(paciente.cancelada === false) {
+        if (paciente.genero === "masculino") {
+            return "Olá, Sr. ${ nome da pessoa }. Infelizmente, sua consulta marcada para o dia ${ data da consulta } foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la"
+        } else if (paciente.genero === "feminino") {
+            return "Olá, Sra. ${ nome da pessoa }. Infelizmente, sua consulta marcada para o dia ${ data da consulta } foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la"
+        }
+    }
+});
