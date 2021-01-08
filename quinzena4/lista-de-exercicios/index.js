@@ -6,3 +6,8 @@
 
 // EXERCÍCIO 02 //
 // O valor impresso na variável novoMontante será de 165 e na variável segundoMontante será "Tipo de investimento informado incorreto!"
+
+// EXERCÍCIO 03 //
+//Quantidade total de números 14
+//6
+//8
