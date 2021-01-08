@@ -181,3 +181,30 @@ const criancas = pessoas.filter((pessoa) => {
 
 console.log(adultos)
 console.log(criancas)
+
+//EXERCÍCIO 02
+const valores = [1, 2, 3, 4, 5, 6]
+const valoresDobrados = valores.map(dobrar)
+const valoresTriplicados = valores.map(triplicar)
+const parImpar = valores.map(parOuImpar)
+
+function dobrar(n) {
+    return n * 2;
+}
+
+console.log(valoresDobrados)
+
+function triplicar(n) {
+    return n * 3;
+}
+
+function parOuImpar(n) {
+    if(n % 2 === 0) {
+        return n, " é par"
+    } else {
+        return n, " é impar"
+    }
+}
+
+console.log(valoresTriplicados)
+console.log(parImpar)
