@@ -143,3 +143,21 @@ function filmeFavorito() {
     }
     console.log("Venha assistir ao filme " + filme.titulo + " de " + filme.ano + ", dirigido por " + filme.diretor + " e estrelado por " + filme.elenco[0] + " e " + filme.elenco[1] + "!")
 }
+
+//EXERCÍCIO 04
+const pessoa = {
+    nome: "Érico Veríssimo",
+    email: "ericoverissimo@gmail.com",
+    endereco: "Porto Alegre"
+}
+console.log(pessoa)
+
+function anonimizarPessoa() {
+    const anonimo = {
+        ...pessoa,
+        nome: "Anônimo"
+    }
+    console.log(anonimo)
+}
+
+anonimizarPessoa()
