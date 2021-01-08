@@ -132,3 +132,14 @@ function criaRetangulo(lado1, lado2) {
     return retangulo;
 }
 console.log(criaRetangulo(10, 15))
+
+//EXERCÍCIO 03
+function filmeFavorito() {
+    const filme = {
+        titulo: "Na Natureza Selvagem",
+        ano: "2007",
+        diretor: "Sean Penn",
+        elenco: ["Emile Hirsch", "Kristen Stewart"]
+    }
+    console.log("Venha assistir ao filme " + filme.titulo + " de " + filme.ano + ", dirigido por " + filme.diretor + " e estrelado por " + filme.elenco[0] + " e " + filme.elenco[1] + "!")
+}
