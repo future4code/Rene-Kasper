@@ -116,3 +116,7 @@ const hello = () => { alert("Hello Future4") }
 
 hello()
 */
+
+// ********************* EXERCÍCIOS DE OBJETOS ********************** //
+//EXERCÍCIO 01
+//Utiliza-se uma array quando queremos guardar um dado por índice. Logo, o objeto, é utilizado quando queremos armazenar mais de um dado por índice.
