@@ -60,6 +60,7 @@ function logica03() {
 
 }
 
+//EXERCÍCIO 04
 function logica04(lado01, lado02, lado03) {
     if (lado01 === lado02 && lado02 === lado03) {
         console.log("Equilátero")
@@ -69,3 +70,42 @@ function logica04(lado01, lado02, lado03) {
         console.log("Escaleno")
     }
 }
+
+//EXERCÍCIO 05
+function logica05() {
+    const numero1 = prompt("Indique o primeiro número")
+    const numero2 = prompt("Indique o segundo número")
+    let maior
+    let div
+    let dif
+
+    if (numero1 > numero2) {
+        maior =  numero1
+        dif = numero1-numero2
+    } else if (numero2 > numero1) {
+        maior = numero2
+        dif = numero2-numero1
+    }
+
+    if (numero1 % numero2 === 0) {
+        div = "é"
+    } else if (numero1 % numero2 === !0) {
+        div = "não é"
+    }
+
+    if (numero2 % numero1 === 0) {
+        div = "é"
+    } else if (numero2 % numero1 === !0){
+        div = "não é"
+    }
+
+    console.log("ENTRADA:")
+    console.log(numero1, " e ", numero2)
+    console.log(" ")
+    console.log("SAÍDA:")
+    console.log("O maior é: " + maior + "!")
+    console.log(numero1, div, "divisível por", numero2)
+    console.log(numero2, div, "divisível por", numero1)
+    console.log("A diferença entre eles é", dif)
+}
+
