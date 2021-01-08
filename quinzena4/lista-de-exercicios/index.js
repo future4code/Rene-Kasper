@@ -15,3 +15,23 @@
 // EXERCÍCIO 04 //
 //-10
 //1590
+
+// ********************* EXERCÍCIOS DE LÓGICA DE PROGRAMAÇÃO ********************** //
+// EXERCÍCIO 01 //
+let nomes = ["bananinha", "teste", "amem"]
+
+// FOR
+for(var i = 0; i < nomes.length; i++) {
+    console.log(nomes[i])
+}
+
+//FOREACH
+nomes.forEach((nome) => {
+    console.log(nome)
+});
+
+//MAP
+const nomesMap = nomes.map(nome => {
+    return nome
+})
+console.log(nomesMap)
