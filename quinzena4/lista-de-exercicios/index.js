@@ -120,3 +120,15 @@ hello()
 // ********************* EXERCÍCIOS DE OBJETOS ********************** //
 //EXERCÍCIO 01
 //Utiliza-se uma array quando queremos guardar um dado por índice. Logo, o objeto, é utilizado quando queremos armazenar mais de um dado por índice.
+
+//EXERCÍCIO 02
+function criaRetangulo(lado1, lado2) {
+    let retangulo = {
+        largura: lado1,
+        altura: lado2,
+        perimetro: 2*(lado1 + lado2),
+        area: (lado1*lado2)
+    }
+    return retangulo;
+}
+console.log(criaRetangulo(10, 15))
